@@ -1,0 +1,14 @@
+Name : docker deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  docker build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: docker build
+        run: echo " this is docker"
